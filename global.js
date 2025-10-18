@@ -37,6 +37,7 @@ for (let p of pages) {
 
 document.body.insertAdjacentHTML(
   'afterbegin',
+  `
 	<label class="color-scheme">
 		Theme:
 		<select>
@@ -44,7 +45,7 @@ document.body.insertAdjacentHTML(
       <option value='light'>Light</option>
       <option value='dark'>Dark</option>
 		</select>
-	</label>,
+	</label>`,
 );
 
 let select = document.querySelector('select');
