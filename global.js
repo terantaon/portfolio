@@ -33,7 +33,7 @@ for (let p of pages) {
     a.target = "_blank";
   }
   nav.append(a);
-}
+};
 
 document.body.insertAdjacentHTML(
   'afterbegin',
