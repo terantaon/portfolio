@@ -12,6 +12,7 @@ let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
   { url: 'contact/', title: 'Contact'},
+  { url: 'https://github.com/terantaon', title: 'GitHub'},
   { url: 'resume.html', title: 'Resume'}
 ];
 
@@ -27,6 +28,9 @@ for (let p of pages) {
   a.textContent = title;
   if (a.host === location.host && a.pathname === location.pathname) {
     a.classList.add('current');
+  }
+  if (a.host !== location.host) {
+    a.target = "_blank";
   }
   nav.append(a);
 }
