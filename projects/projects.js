@@ -14,6 +14,6 @@ if (projects && projectsContainer) {
 
   const title = document.querySelector('.projects-title');
   if (title) {
-    title.textContent += ` (${projects.length})`;
+    title.textContent = `${projects.length}` + title.textContent;
   }
 }
