@@ -2,7 +2,7 @@
 	{
 		"title": "Image Processor",
 		"year": "2024",
-		"image": "./images/pixel.avif",
+		"image": "images/pixel.avif",
 		"description": "Implement image processing methods through editing pixels in a Processor Template. Simulate a monetized app using inheritance. Implement a KNN classifier to predict the labels of images."
 	},
 	{
