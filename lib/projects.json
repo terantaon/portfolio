@@ -6,19 +6,21 @@
 		"description": "Implement image processing methods through editing pixels in a Processor Template. Simulate a monetized app using inheritance. Implement a KNN classifier to predict the labels of images."
 	},
 	{
-		"title": "Architecto minima sed omnis?",
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Est, reiciendis aspernatur debitis maxime et itaque animi sit quod quo, tempore incidunt tempora dignissimos exercitationem enim numquam quam quaerat optio laborum ut unde hic delectus laboriosam? Quasi, cupiditate corporis."
+		"title": "Power Outages Analysis",
+		"year": "2024",
+		"image": "images/plot.png",
+		"description": "Access and examine an online dataset of major power outages in the U.S.. Generate visualizations of the data using plotly. Build a predictive model for the cause of major power outages using sklearn RandomForestClassifier. "
 	},
 	{
-		"title": "Asperiores rem repellendus doloremque.",
-		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
+		"title": "Amazon Product and User Rating Analysis Project",
+		"image": "images/Amazon.png",
 		"description": "Eligendi tenetur quae quos recusandae est. Cumque, voluptatem. Quo nihil dignissimos molestiae explicabo praesentium aspernatur debitis, illo rerum possimus quam ducimus earum nulla officiis maiores itaque repellat corporis soluta labore?"
 	},
 	{
 		"title": "Laudantium reprehenderit placeat perspiciatis.",
+		"year": "2025",
 		"image": "https://vis-society.github.io/labs/2/images/empty.svg",
-		"description": "Quo minus perferendis nulla corrupti repellat dolorem dolore assumenda sit minima ducimus quidem ullam, id ipsa dicta tempora laborum officiis unde possimus cumque nobis alias inventore! Ullam repudiandae iusto nam."
+		"description": "Analyze the dataset from Amazon.com in the pyspark environment, which contains 9.34 million pieces of data on products and user ratings. Select, process raw data and convert it into features that can be used for machine learning, such as word2vec and one-hot encoding. "
 	},
 	{
 		"title": "Consequuntur autem eos facere.",
