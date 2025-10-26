@@ -15,12 +15,12 @@
 		"title": "Amazon Product and User Rating Analysis Project",
 		"year": "2025",
 		"image": "images/Amazon.png",
-		"description": "Eligendi tenetur quae quos recusandae est. Cumque, voluptatem. Quo nihil dignissimos molestiae explicabo praesentium aspernatur debitis, illo rerum possimus quam ducimus earum nulla officiis maiores itaque repellat corporis soluta labore?"
+		"description": "Analyze the dataset from Amazon.com in the pyspark environment, which contains 9.34 million pieces of data on products and user ratings. Select, process raw data and convert it into features that can be used for machine learning, such as word2vec and one-hot encoding. "
 	},
 	{
 		"title": "Laudantium reprehenderit placeat perspiciatis.",
 		"image": "images/placeholder.png",
-		"description": "Analyze the dataset from Amazon.com in the pyspark environment, which contains 9.34 million pieces of data on products and user ratings. Select, process raw data and convert it into features that can be used for machine learning, such as word2vec and one-hot encoding. "
+		"description": ""
 	},
 	{
 		"title": "Consequuntur autem eos facere.",
