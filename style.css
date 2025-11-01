@@ -136,12 +136,12 @@ body {
     width: 1em;
     height: 1em;
     color: var(--color);
-    border-radius: 50%;
+    border-radius: 0.25em;
   }
   .container {
     display: flex;
     border: 1px solid var(--muted-color);
-    border-radius: 50%;
+    border-radius: 0.5em;
     background-color: var(--color-accent);
   }
 }
