@@ -48,13 +48,13 @@ function renderPieChart(projectsGiven) {
         svg
         .selectAll('path')
         .attr('class', (_, idx) => (
-          // TODO: filter idx to find correct legend and apply CSS from above
+          idx === selectedIndex ? 'selected' : ''
         ));
 
         legend
         .selectAll('li')
         .attr('class', (_, idx) => (
-           // TODO: filter idx to find correct legend and apply CSS from above
+          idx === selectedIndex ? 'selected' : ''
         ));
 
         if (selectedIndex === -1) {
