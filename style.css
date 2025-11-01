@@ -125,6 +125,12 @@ body {
 
   overflow: visible;
   }
+  .container {
+    display: flex;
+    border: 1px solid var(--muted-color);
+    border-radius: 0.5em;
+    background-color: oklch(84.376% 0.0754 201.185);
+  }
   .legend {
     flex: 1;
     display: grid;
@@ -138,10 +144,9 @@ body {
     color: var(--color);
     border-radius: 0.25em;
   }
-  .container {
+  .item {
     display: flex;
-    border: 1px solid var(--muted-color);
-    border-radius: 0.5em;
-    background-color: var(--color-accent);
+    align-items: center;
+    gap: 0.5em;
   }
 }
