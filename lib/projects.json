@@ -18,47 +18,56 @@
 		"description": "Analyze the dataset from Amazon.com in the pyspark environment, which contains 9.34 million pieces of data on products and user ratings. Select, process raw data and convert it into features that can be used for machine learning, such as word2vec and one-hot encoding. "
 	},
 	{
-		"title": "Laudantium reprehenderit placeat perspiciatis.",
-		"image": "images/placeholder.png",
-		"description": ""
+		"title": "Meteorite Impact Analysis",
+		"year": "2023",
+		"image": "images/meteoroid.jpg",
+		"description": "The research includes a database of meteorite impacts that occurred globally."
 	},
 	{
-		"title": "Consequuntur autem eos facere.",
-		"image": "images/placeholder.png",
-		"description": "Laborum alias ea unde harum aspernatur? Molestiae, veritatis, possimus, numquam ex excepturi quod ducimus sit odit optio quibusdam sequi aliquid itaque tempore perspiciatis placeat expedita vero voluptates. Sit, aspernatur sint!"
+		"title": "Personal Asset Map",
+		"year": "2024",
+		"image": "images/asset.png",
+		"description": "Draw the personal asset map for future community engagements"
 	},
 	{
-		"title": "Quos sint quaerat omnis?",
-		"image": "images/placeholder.png",
-		"description": "Est neque, velit nam rerum error odio voluptates voluptatem magnam laboriosam ad? Doloribus, id et itaque unde porro totam ullam quaerat blanditiis odit animi eveniet aut, voluptate velit iure odio."
+		"title": "Composite Story Comic Strip",
+		"year": "2025",
+		"image": "images/comic.png",
+		"description": "Tell a composite story to promote social justice of equal access"
 	},
 	{
-		"title": "Iste ipsam magni fuga!",
-		"image": "images/placeholder.png",
-		"description": "Velit omnis suscipit nemo quia? Iste maiores numquam labore quia nemo eveniet odit, modi magnam? Architecto officia sint est. Architecto iste minima consequuntur explicabo illo error sed at dolore nostrum!"
+		"title": "Collaborative Genre Project",
+		"year": "2025",
+		"image": "images/evs.png",
+		"description": "We make a data dashboard to explore relationship between electrical vehicles usage and CO2 emissions"
 	},
 	{
 		"title": "Ipsum, aperiam magni? Nobis.",
+		"year": "2023",
 		"image": "images/placeholder.png",
 		"description": "Delectus magni, vel, quod mollitia hic rem temporibus, sint doloribus tenetur qui dolores tempore quisquam fuga nobis recusandae molestiae ipsum nostrum maxime eaque dicta aperiam eum quas beatae. At, neque."
 	},
 	{
 		"title": "Dicta nihil odit illo?",
+		"year": "2024",
 		"image": "images/placeholder.png",
 		"description": "Vitae quos laudantium officiis rerum, accusamus delectus aspernatur quas nulla, magni sed, excepturi saepe incidunt laboriosam alias at aliquam atque quisquam autem nesciunt. Minus, reprehenderit odit nam illo natus aspernatur?"
 	},
 	{
 		"title": "Vel earum nulla facilis.",
+		"year": "2025",
 		"image": "images/placeholder.png",
 		"description": "Aut voluptatem sint atque corrupti accusamus necessitatibus possimus et, itaque nulla id deleniti nemo repellendus asperiores molestias laudantium, mollitia ad dicta. Laboriosam, itaque. Quos corporis, perferendis natus officiis beatae qui."
 	},
 	{
 		"title": "Nobis iste neque quaerat.",
+		"year": "2023",
 		"image": "images/placeholder.png",
 		"description": "Quos, recusandae, sit rerum velit nostrum nihil quisquam tempora repellat sed quibusdam facilis. Assumenda quaerat ab, nesciunt odio facere sit, ipsa necessitatibus tempora, maiores commodi sed quae provident deserunt at?"
 	},
 	{
 		"title": "Iusto, incidunt. Totam, illum.",
+		"year": "2025",
 		"image": "images/placeholder.png",
 		"description": "Tempore, eveniet minus velit, earum aperiam necessitatibus repellendus provident accusamus illum officiis doloribus, eum saepe est aut numquam distinctio pariatur natus totam repellat. Numquam nulla libero sapiente magnam nostrum ex."
 	}
