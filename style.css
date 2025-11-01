@@ -127,15 +127,14 @@ body {
   }
   .container {
     display: flex;
-    border: 1px solid var(--muted-color);
-    border-radius: 0.5em;
-    background-color: oklch(89.269% 0.03989 202.492);
   }
   .legend {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     gap: 1em;
+    border: 1px solid var(--muted-color);
+    border-radius: 0.5em;
   }
   .item {
     display: flex;
