@@ -119,7 +119,7 @@ body {
     color: var(--muted-color);
     font-size: 0.95em;
   }
-  .projects-plot {
+  #projects-plot {
   max-width: 20em;
   margin-block: 2em;
 
