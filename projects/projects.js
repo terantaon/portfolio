@@ -43,7 +43,7 @@ function renderPieChart(projectsGiven) {
       .attr('d', arc)
       .attr('fill', colors(idx))
       .on('click', () => {
-        selectedIndex = selectedIndex === i ? -1 : i;
+        selectedIndex = selectedIndex === idx ? -1 : idx;
 
         svg
         .selectAll('path')
@@ -77,12 +77,16 @@ function renderPieChart(projectsGiven) {
 // Call this function on page load
 renderPieChart(projects);
 
+let query = '';
 let searchInput = document.querySelector('.searchBar');
-
 searchInput.addEventListener('change', (event) => {
   // update query value
+  query = event.target.value;
   // filter projects
-  let filteredProjects = setQuery(event.target.value);
+  let filteredProjects = projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
   // render filtered projects
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
