@@ -130,17 +130,18 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
     gap: 1em;
-    padding: 0.5em;
-    margin: 0.5em;
   }
   .swatch {
     display: inline-block;
     width: 1em;
     height: 1em;
     color: var(--color);
-    border-radius: 15%;
+    border-radius: 50%;
   }
   .container {
     display: flex;
+    border: 1px solid var(--muted-color);
+    border-radius: 50%;
+    background-color: var(--color-accent);
   }
 }
