@@ -119,10 +119,23 @@ body {
     color: var(--muted-color);
     font-size: 0.95em;
   }
-  .projects-pie-plot {
+  .projects-plot {
   max-width: 20em;
   margin-block: 2em;
 
   overflow: visible;
+  }
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+  .swatch {
+    width: 1em;
+    height: 1em;
+    color: var(--color-accent);
+    border-radius: 15%;
   }
 }
