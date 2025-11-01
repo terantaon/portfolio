@@ -134,9 +134,10 @@ body {
     margin: 0.5em;
   }
   .swatch {
+    display: inline-block;
     width: 1em;
     height: 1em;
-    color: var(--color-accent);
+    color: var(--color);
     border-radius: 15%;
   }
   .container {
