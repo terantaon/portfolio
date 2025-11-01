@@ -15,6 +15,8 @@ let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 
 let colors = d3.scaleOrdinal(d3.schemeTableau10);
 
+let selectedIndex = -1;
+
 function renderPieChart(projectsGiven) {
   // re-calculate rolled data
   let newRolledData = d3.rollups(
@@ -31,20 +33,40 @@ function renderPieChart(projectsGiven) {
   let newArcData = newSliceGenerator(newData);
   let newArcs = newArcData.map((d) => arcGenerator(d));
 
-  let newSVG = d3.select('svg');
-  newSVG.selectAll('path').remove();
-  let newLegend = d3.select('.legend');
-  newLegend.selectAll('li').remove();
+  let svg = d3.select('svg');
+  svg.selectAll('path').remove();
+  let legend = d3.select('.legend');
 
   newArcs.forEach((arc, idx) => {
-    newSVG
+    svg
       .append('path')
       .attr('d', arc)
       .attr('fill', colors(idx))
+      .on('click', () => {
+        selectedIndex = selectedIndex === i ? -1 : i;
+
+        svg
+        .selectAll('path')
+        .attr('class', (_, idx) => (
+          // TODO: filter idx to find correct legend and apply CSS from above
+        ));
+
+        legend
+        .selectAll('li')
+        .attr('class', (_, idx) => (
+           // TODO: filter idx to find correct legend and apply CSS from above
+        ));
+
+        if (selectedIndex === -1) {
+          renderProjects(projects, projectsContainer, 'h2');
+        } else {
+
+        }
+      });
     })
 
     newData.forEach((d, idx) => {
-      newLegend
+      legend
       .append('li')
       .attr('style', `--color:${colors(idx)}`)
       .attr('class', 'item')
