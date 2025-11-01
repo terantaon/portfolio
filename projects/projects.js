@@ -77,9 +77,13 @@ function renderPieChart(projectsGiven) {
 // Call this function on page load
 renderPieChart(projects);
 
+let searchInput = document.querySelector('.searchBar');
+
 searchInput.addEventListener('change', (event) => {
+  // update query value
+  // filter projects
   let filteredProjects = setQuery(event.target.value);
-  // re-render legends and pie chart when event triggers
+  // render filtered projects
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
