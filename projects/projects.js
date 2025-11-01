@@ -44,3 +44,19 @@ data.forEach((d, idx) => {
     .attr('class', 'item')
     .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`);
 });
+
+let query = '';
+
+let searchInput = document.querySelector('.searchBar');
+
+searchInput.addEventListener('change', (event) => {
+  // update query value
+  query = event.target.value;
+
+  let filteredProjects = projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
+
+  renderProjects(filteredProjects, projectsContainer, 'h2');
+});
