@@ -36,6 +36,7 @@ function renderPieChart(projectsGiven) {
   let svg = d3.select('svg');
   svg.selectAll('path').remove();
   let legend = d3.select('.legend');
+  legend.selectAll('li').remove();
 
   newArcs.forEach((arc, idx) => {
     svg
