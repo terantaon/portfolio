@@ -55,7 +55,7 @@ function renderPieChart(projectsGiven) {
         legend
         .selectAll('li')
         .attr('class', (_, idx) => (
-          idx === selectedIndex ? 'selected' : ''
+          idx === selectedIndex ? 'item-selected' : 'item'
         ));
 
         if (selectedIndex === -1) {

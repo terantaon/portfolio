@@ -135,7 +135,6 @@ body {
     gap: 1em;
     border: 1px solid var(--muted-color);
     border-radius: 0.5em;
-    height: 10em;
   }
   .item {
     display: flex;
@@ -164,5 +163,12 @@ body {
     &:is(path) {
       fill: var(--color);
     }
+  }
+  .item-selected{
+    --color: oklch(60% 45% 0) !important;
+    
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
   }
 }
