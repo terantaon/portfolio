@@ -135,6 +135,7 @@ body {
     gap: 1em;
     border: 1px solid var(--muted-color);
     border-radius: 0.5em;
+    height: 10em;
   }
   .item {
     display: flex;
