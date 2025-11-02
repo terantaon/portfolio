@@ -35,7 +35,7 @@ function renderPieChart(projectsGiven) {
 
   let svg = d3.select('svg');
   svg.selectAll('path').remove();
-  let legend = d3.select('.legend');
+  let legend = d3.select('.legend');  
   legend.selectAll('li').remove();
 
   newArcs.forEach((arc, idx) => {
@@ -61,7 +61,10 @@ function renderPieChart(projectsGiven) {
         if (selectedIndex === -1) {
           renderProjects(projects, projectsContainer, 'h2');
         } else {
-
+          let filteredProjects = projects.filter((project) => 
+            project.year === newData[selectedIndex].label
+          );
+          renderProjects(filteredProjects, projectsContainer, 'h2');
         }
       });
     })
