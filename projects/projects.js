@@ -26,7 +26,7 @@ function renderPieChart(projectsGiven) {
   );
   // re-calculate data
   let newData = newRolledData.map(([year, count]) => {
-    return { value: count, label: year }; 
+    return { value: count, label: year };
   });
   // re-calculate slice generator, arc data, arc, etc.
   let newSliceGenerator = d3.pie().value((d) => d.value);
