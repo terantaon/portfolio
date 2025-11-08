@@ -172,15 +172,28 @@ body {
     gap: 0.5em;
   }
   .stats {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: auto auto;           
-  grid-auto-columns: minmax(120px, 1fr);    
-  column-gap: 2rem;                       
-  align-items: end;
-  margin: 0;
-  padding: 0;
-}
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;           
+    grid-auto-columns: minmax(120px, 1fr);    
+    column-gap: 2rem;                       
+    align-items: end;
+    margin: 0;
+    padding: 0;
+  }
+  .stats dt {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin: 0;
+  }
+  .stats dd {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+  }
   .gridlines line {
     opacity: 0.15;
   }
