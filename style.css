@@ -175,33 +175,29 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: auto auto;           
-    grid-auto-columns: minmax(120px, 1fr);    
-    column-gap: 2rem;                       
-    align-items: end;
-    margin: 0;
-    padding: 0;
+    grid-auto-columns: minmax(120px, 1fr);                          
+    margin: 1rem;
   }
   .stats dt {
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
+    font-size: 0.8rem;
     text-transform: uppercase;
     opacity: 0.7;
-    margin: 0;
   }
   .stats dd {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    line-height: 1.1;
   }
   .gridlines line {
     opacity: 0.15;
   }
-  .info {
+  dl.info {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.25rem 0.75rem;
     margin: 1rem 0;
+    transition-duration: 500ms;
+    transition-property: opacity, visibility;
   }
   .tooltip {
     position: fixed;
@@ -215,10 +211,6 @@ body {
   }
   circle:hover {
     transform: scale(1.5);
-  }
-  dl.info {
-    transition-duration: 500ms;
-    transition-property: opacity, visibility;
   }
   dl.info[hidden]:not(:hover, :focus-within) {
     opacity: 0;

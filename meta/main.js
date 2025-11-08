@@ -72,7 +72,7 @@ function renderCommitInfo(data, commits) {
   );
   const averageFileLength = d3.mean(fileLengths, (d) => d[1]);
 
-  dl.append('dt').text('Average file lengt');
+  dl.append('dt').text('Average file length');
   dl.append('dd').text(averageFileLength);
 }
 
