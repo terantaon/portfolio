@@ -42,7 +42,7 @@ function processCommits(data) {
       });
 
       return ret;
-    });
+    }).sort((a, b) => d3.ascending(a.datetime, b.datetime));
 }
 
 function renderCommitInfo(data, commits) {
