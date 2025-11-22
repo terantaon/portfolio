@@ -253,6 +253,22 @@ function renderLanguageBreakdown(selection) {
   }
 }
 
+let data = await loadData();
+let commits = processCommits(data);
+
+let commitProgress = 100;
+let timeScale = d3
+  .scaleTime()
+  .domain([
+    d3.min(commits, (d) => d.datetime),
+    d3.max(commits, (d) => d.datetime),
+  ])
+  .range([0, 100]);
+let commitMaxTime = timeScale.invert(commitProgress);
+
+let slider = document.getElementById('commit-progress');
+let filteredCommits = commits;
+
 function updateScatterPlot(data, commits) {
   const width = 1000;
   const height = 600;
@@ -302,22 +318,6 @@ function updateScatterPlot(data, commits) {
       updateTooltipVisibility(false);
     });
 }
-
-let data = await loadData();
-let commits = processCommits(data);
-
-let commitProgress = 100;
-let timeScale = d3
-  .scaleTime()
-  .domain([
-    d3.min(commits, (d) => d.datetime),
-    d3.max(commits, (d) => d.datetime),
-  ])
-  .range([0, 100]);
-let commitMaxTime = timeScale.invert(commitProgress);
-
-let slider = document.getElementById('commit-progress');
-let filteredCommits = commits;
 
 function onTimeSliderChange() {
   const slider = document.getElementById("commit-progress");
