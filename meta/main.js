@@ -336,7 +336,6 @@ function onTimeSliderChange() {
 
 slider.addEventListener('input', onTimeSliderChange);
 
-onTimeSliderChange();
-
 renderCommitInfo(data, commits);
 renderScatterPlot(data, commits);
+onTimeSliderChange();
