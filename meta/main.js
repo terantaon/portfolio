@@ -257,7 +257,7 @@ function renderLanguageBreakdown(selection) {
 let data = await loadData();
 let commits = processCommits(data);
 
-let commitProgress = 100;
+let commitProgress = 0;
 let timeScale = d3
   .scaleTime()
   .domain([
@@ -412,7 +412,10 @@ function onStepEnter(response) {
     dateStyle: 'long',
     timeStyle: 'short'
   });
-  onTimeSliderChange()
+  filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
+  
+  updateScatterPlot(filteredCommits);
+  updateFileDisplay(filteredCommits);
 }
 
 const scroller = scrollama();
