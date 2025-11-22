@@ -208,6 +208,9 @@ body {
     transition: 200ms;
     transform-origin: center;
     transform-box: fill-box;
+    @starting-style {
+      r: 0;
+    }
   }
   circle:hover {
     transform: scale(1.5);
@@ -230,5 +233,13 @@ body {
   }
   circle.selected {
     fill: #ff6b6b;
+  }
+  .slider {
+    display: flex;
+    align-items: baseline;
+    flex: 1;
+  }
+  .slider time {
+    margin-left: auto;
   }
 }
