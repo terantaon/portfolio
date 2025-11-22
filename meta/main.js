@@ -417,7 +417,7 @@ function onStepEnter(response) {
   });
   filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
   
-  updateScatterPlot(filteredCommits);
+  updateScatterPlot(data, filteredCommits);
   updateFileDisplay(filteredCommits);
 }
 
