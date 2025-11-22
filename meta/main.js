@@ -257,7 +257,7 @@ function renderLanguageBreakdown(selection) {
 let data = await loadData();
 let commits = processCommits(data);
 
-let commitProgress = 0;
+let commitProgress = 100;
 let timeScale = d3
   .scaleTime()
   .domain([
@@ -267,8 +267,6 @@ let timeScale = d3
   .range([0, 100]);
 let commitMaxTime = timeScale.invert(commitProgress);
 
-const slider = document.getElementById('commit-progress');
-const timeEl = document.getElementById("commit-time");
 let filteredCommits = commits;
 
 function updateFileDisplay(filteredCommits) {
@@ -360,8 +358,10 @@ function updateScatterPlot(data, commits) {
 }
 
 function onTimeSliderChange() {
+  const slider = document.getElementById('commit-progress');
   commitProgress = +slider.value;
   commitMaxTime = timeScale.invert(commitProgress);
+  const timeEl = document.getElementById('commit-time');
   timeEl.textContent = commitMaxTime.toLocaleString('en-US', {
     dateStyle: 'long',
     timeStyle: 'short'
@@ -375,6 +375,7 @@ function onTimeSliderChange() {
 renderCommitInfo(data, commits);
 renderScatterPlot(data, commits);
 
+const slider = document.getElementById('commit-progress');
 slider.addEventListener('input', onTimeSliderChange);
 onTimeSliderChange();
 
@@ -407,7 +408,9 @@ function onStepEnter(response) {
   const commit = response.element.__data__;
   commitMaxTime = commit.datetime;
   commitProgress = timeScale(commitMaxTime);
+  const slider = document.getElementById('commit-progress');
   slider.value = commitProgress;
+  const timeEl = document.getElementById('commit-time');
   timeEl.textContent = commitMaxTime.toLocaleString('en-US', {
     dateStyle: 'long',
     timeStyle: 'short'
