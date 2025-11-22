@@ -267,7 +267,8 @@ let timeScale = d3
   .range([0, 100]);
 let commitMaxTime = timeScale.invert(commitProgress);
 
-let slider = document.getElementById('commit-progress');
+const slider = document.getElementById('commit-progress');
+const timeEl = document.getElementById("commit-time");
 let filteredCommits = commits;
 
 function updateFileDisplay(filteredCommits) {
@@ -359,9 +360,6 @@ function updateScatterPlot(data, commits) {
 }
 
 function onTimeSliderChange() {
-  const slider = document.getElementById("commit-progress");
-  const timeEl = document.getElementById("commit-time");
-
   commitProgress = +slider.value;
   commitMaxTime = timeScale.invert(commitProgress);
   timeEl.textContent = commitMaxTime.toLocaleString('en-US', {
@@ -407,21 +405,14 @@ d3.select('#scatter-story')
 
 function onStepEnter(response) {
   const commit = response.element.__data__;
-
   commitMaxTime = commit.datetime;
   commitProgress = timeScale(commitMaxTime);
-  const slider = document.getElementById('commit-progress');
   slider.value = commitProgress;
-  const timeEl = document.getElementById('commit-time');
   timeEl.textContent = commitMaxTime.toLocaleString('en-US', {
     dateStyle: 'long',
     timeStyle: 'short'
   });
-
-  filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
-
-  updateScatterPlot(filteredCommits);
-  updateFileDisplay(filteredCommits);
+  onTimeSliderChange()
 }
 
 const scroller = scrollama();
